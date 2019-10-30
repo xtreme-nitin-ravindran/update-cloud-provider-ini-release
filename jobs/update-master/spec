@@ -1,0 +1,10 @@
+---
+name: update-master
+
+templates: 
+  pre-start: bin/pre-start
+
+packages: 
+- cloud-provider
+
+properties: {}

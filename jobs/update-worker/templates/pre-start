@@ -1,0 +1,3 @@
+#! /bin/bash
+
+cp -L /var/vcap/packages/cloud-provider/cloud-provider.ini /var/vcap/jobs/kubelet/config/cloud-provider.ini
