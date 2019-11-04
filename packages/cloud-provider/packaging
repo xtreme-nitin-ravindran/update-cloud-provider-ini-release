@@ -1,3 +1,0 @@
-set -e
-
-cp cloud-provider.ini "${BOSH_INSTALL_TARGET}"/

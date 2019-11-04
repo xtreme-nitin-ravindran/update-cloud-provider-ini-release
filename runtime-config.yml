@@ -10,6 +10,10 @@ addons:
     jobs:
     - name: kube-apiserver
       release: kubo
+      properties:
+        pks:
+          aws_region:
+          aws_endpoint_url:
 - name: update-worker
   jobs: 
   - name: update-worker
@@ -18,4 +22,7 @@ addons:
     jobs:
     - name: kubelet
       release: kubo
-  
+      properties:
+        pks:
+          aws_region:
+          aws_endpoint_url:

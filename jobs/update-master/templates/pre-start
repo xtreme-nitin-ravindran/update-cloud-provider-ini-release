@@ -1,4 +1,4 @@
 #! /bin/bash
 
-cp -L /var/vcap/packages/cloud-provider/cloud-provider.ini /var/vcap/jobs/kube-apiserver/config/cloud-provider.ini
-cp -L /var/vcap/packages/cloud-provider/cloud-provider.ini /var/vcap/jobs/kube-controller-manager/config/cloud-provider.ini
+cp -L /var/vcap/jobs/update-master/cloud-provider.ini /var/vcap/jobs/kube-apiserver/config/cloud-provider.ini1
+cp -L /var/vcap/jobs/update-master/cloud-provider.ini /var/vcap/jobs/kube-controller-manager/config/cloud-provider.ini1

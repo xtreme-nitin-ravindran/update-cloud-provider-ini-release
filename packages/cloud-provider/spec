@@ -1,7 +1,0 @@
----
-name: cloud-provider
-
-dependencies: []
-
-files: 
-- cloud-provider.ini
