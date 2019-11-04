@@ -1,0 +1,45 @@
+# added by update-cloud-provider release
+
+[Global]
+
+[ServiceOverride "ec2"]
+URL = "https://ec2.<%= pks.aws_endpoint_url %>"
+SigningRegion = "<%= pks.aws_region %>"
+Region = "<%= pks.aws_region %>"
+SigningMethod = v4
+Service = ec2
+
+[ServiceOverride "elasticloadbalancing"]
+URL = "https://elasticloadbalancing.<%= pks.aws_endpoint_url %>"
+SigningRegion = "<%= pks.aws_region %>"
+Region = "<%= pks.aws_region %>"
+SigningMethod = v4
+Service = elasticloadbalancing
+
+[ServiceOverride "autoscaling"]
+URL = "https://autoscaling.<%= pks.aws_endpoint_url %>"
+SigningRegion = "<%= pks.aws_region %>"
+Region = "<%= pks.aws_region %>"
+SigningMethod = v4
+Service = autoscaling
+
+[ServiceOverride "kms"]
+URL = "https://kms.<%= pks.aws_endpoint_url %>"
+SigningRegion = "<%= pks.aws_region %>"
+Region = "<%= pks.aws_region %>"
+SigningMethod = v4
+Service = kms
+
+[ServiceOverride "sts"]
+URL = "https://sts.<%= pks.aws_endpoint_url %>"
+SigningRegion = "<%= pks.aws_region %>"
+Region = "<%= pks.aws_region %>"
+SigningMethod = v4
+Service = sts
+
+[ServiceOverride "metadata"]
+URL = "http://169.254.169.254"
+SigningRegion = "<%= pks.aws_region %>"
+Region = "<%= pks.aws_region %>"
+SigningMethod = v4
+Service = metadata

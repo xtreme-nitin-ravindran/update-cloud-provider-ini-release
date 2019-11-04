@@ -3,8 +3,11 @@ name: update-worker
 
 templates: 
   pre-start: bin/pre-start
+  config/cloud-provider.ini.erb: config/cloud-provider.ini
 
-packages: 
-- cloud-provider
+packages: []
 
-properties: {}
+properties:
+  pks:
+    aws_region:
+    aws_endpoint_url:

@@ -3,8 +3,10 @@ name: update-master
 
 templates: 
   pre-start: bin/pre-start
+  config/cloud-provider.ini.erb: config/cloud-provider.ini
+packages: []
 
-packages: 
-- cloud-provider
-
-properties: {}
+properties:
+  pks:
+    aws_region:
+    aws_endpoint_url:
