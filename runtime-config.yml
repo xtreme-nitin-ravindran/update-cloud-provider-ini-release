@@ -1,28 +1,30 @@
 releases:
 - name: update-cloud-provider-ini
-  version: 
+  version: 0+dev.5
 addons:
 - name: update-master
   jobs: 
   - name: update-master
     release: update-cloud-provider-ini
+    properties:
+      pks:
+        aws_region: us-east-1b
+        aws_endpoint_url: amazonaws.com
   include:
     jobs:
     - name: kube-apiserver
       release: kubo
-      properties:
-        pks:
-          aws_region:
-          aws_endpoint_url:
+
 - name: update-worker
   jobs: 
   - name: update-worker
     release: update-cloud-provider-ini
+    properties:
+        pks:
+          aws_region: us-east-1b
+          aws_endpoint_url: amazonaws.com
   include:
     jobs:
     - name: kubelet
       release: kubo
-      properties:
-        pks:
-          aws_region:
-          aws_endpoint_url:
+      
